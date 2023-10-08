@@ -1,0 +1,304 @@
+.button-container {
+  cursor: pointer;
+  width: 10vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.button {
+  background-color: $orange;
+  border-radius: 10px;
+  font-family: "Proxima Nova";
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: 100%;
+
+  &, span {
+    color: white;
+  }
+
+  i,
+  span,
+  img {
+    transition: all $duration ease-in-out;
+  }
+
+  &:hover {
+    background-color: darken($orange, 8%);
+  }
+
+  &:active {
+    background-color: darken($orange, 12%);
+    transform: translateY(1px);
+  }
+
+  &-delimiter {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  &-card-bottom {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid $orange;
+    padding: 5%;
+    cursor: pointer;
+
+    svg, path {
+      fill: $orange;
+    }
+
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      background-color: $orange;
+      color: #fff;
+      font-weight: 600;
+      width: 22px;
+      height: 22px;
+      font-style: normal;
+      font-size: 16px;
+    }
+
+    span {
+      color: $orange;
+      border-radius: 10px;
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      span {
+        color: white;
+      }
+
+      svg, path {
+        fill: white;
+      }
+
+      &:active {
+        background-color: darken($orange, 8%);
+      }
+    }
+
+  }
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-radius: 20px;
+  }
+
+  &--black {
+    background-color: $black;
+
+    &:hover,
+    &:active {
+      background-color: lighten($color: $black, $amount: 10);
+    }
+  }
+
+  &--outline {
+    background-color: #fff;
+    border-color: $orange;
+
+    &,
+    span {
+      color: $orange;
+    }
+
+    svg {
+      path {
+        fill: $orange;
+      }
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      &,
+      span {
+        color: #fff;
+      }
+
+
+      &:active {
+        background-color: darken($orange, 8%);
+      }
+    }
+  }
+
+
+  &--add {
+    svg {
+      margin-right: 2px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    &:hover {
+      i {
+        background-color: #fff;
+        color: $orange;
+      }
+    }
+
+    i {
+      display: inline-block;
+      border-radius: 30px;
+      background-color: $orange;
+      color: #fff;
+      font-weight: 600;
+      width: 22px;
+      height: 22px;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 22px;
+      position: relative;
+      top: -1px;
+      left: 3px;
+    }
+  }
+  &-back {
+    background-color: #282828;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-radius: 30px;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    list-style-type: none;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    width: 100%;
+
+
+
+    &:hover {
+      background-color: darken(#d9d9d9, 2%);
+      color: #232323;
+    }
+
+    &:active {
+      background-color: darken(#f9f9f9, 5%);
+    }
+
+    &.active {
+      background-color: #282828;
+      color: white;
+    }
+  }
+
+  &--cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    width: 11vw;
+
+    &.pay {
+      height: 50px;
+    }
+
+    img {
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    &--delete {
+      font-family: "Proxima Nova";
+      font-size: 16px;
+      background-color: white;
+      color: #B6B6B6;
+      cursor: pointer;
+      transition: border-width 0.1s ease-in-out;
+
+      &:hover {
+        background-color: rgba(145, 145, 145, 0.18);
+      }
+    }
+  }
+}
+
+.cart-bottom {
+  width: 20%;
+  height: 50px;
+  font-size: 16px;
+  border: 2px solid rgba(182, 182, 182, 0.5);
+  transition: border-width 0.1s ease-in-out;
+
+  p {
+    margin-left: 5%;
+  }
+
+  &:hover {
+    background-color: rgba(182, 182, 182, 0.5);
+    border-width: 0;
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.pizza {
+  border: 2px solid rgba(182, 182, 182, 0.5);
+  transition: border-width 0.1s ease-in-out;
+
+  &:hover {
+    border-width: 0;
+    background-color: rgba(182, 182, 182, 0.5);
+
+    svg {
+      path {
+        fill: white;
+      }
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.link-back {
+  width: 30%;
+}
+
+
+.link-back-cart {
+  width: 100%;
+}

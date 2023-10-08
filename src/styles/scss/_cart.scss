@@ -1,0 +1,165 @@
+.cart {
+  &-container {
+    width: 65%;
+  }
+
+  &--clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .text-about-clear {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 2%;
+    }
+
+    .clear-descr {
+      text-align: center;
+      font-size: 18px;
+      width: 70%;
+    }
+  }
+
+  &--buttons--bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  &-name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    font-family: "Proxima Nova";
+  }
+
+  &-logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  &-delete {
+    width: 17%;
+    display: flex;
+    align-items: center;
+  }
+
+  &-blocks {
+    width: 100%;
+  }
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &--pizza {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+    justify-content: space-between;
+
+    &--logo {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 30%;
+      .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+      }
+
+      .name {
+        font-size: 22px;
+        font-family: "Proxima Nova";
+      }
+
+      .descr {
+        font-size: 18px;
+        font-family: "Proxima Nova";
+        color: #8D8D8D;
+      }
+
+    }
+
+  }
+
+  &-container-delimiter {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    width: 100%;
+
+    &-background {
+      height: 2px;
+      background-color: $gray-line;
+      width: 100%;
+    }
+  }
+
+  &-itog {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    font-size: 22px;
+    &-count {
+      width: 50vw;
+
+      &-count {
+        margin-left: 2%;
+        font-weight: 700;
+      }
+    }
+
+    &-price {
+      width: 50vw;
+      display: flex;
+      justify-content: flex-end;
+
+      &-price {
+        margin-left: 2%;
+        color: $orange;
+        font-weight: 700;
+      }
+    }
+
+  }
+}
+
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  i {
+    font-family: "Proxima Nova";
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+.summ {
+  p {
+    font-family: "Proxima Nova";
+    font-size: 22px;
+  }
+}
+
+.clear-image {
+  width: 300px;
+  height: 255px;
+  margin-top: 3%;
+}

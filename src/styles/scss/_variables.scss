@@ -1,0 +1,30 @@
+$black: #232323;
+$background: #ffdf8c;
+$gray-line: #F9F9F9;
+$orange: #fe5f1e;
+
+$container-width: 90%;
+
+$duration: 0.15s;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFDF8C;
+}
+
+.App {
+  margin: 2.5%;
+  background: white;
+  min-height: 100vh;
+  width: 95%;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
